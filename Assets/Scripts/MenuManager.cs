@@ -5,13 +5,13 @@ using UnityEngine.SceneManagement;
 
 public class MenuManager : MonoBehaviour
 {
-    // Go back to Main Menu
+    // go back to Main Menu
     public void BackToMenu()
     {
         SceneManager.LoadScene("Menu");
     }
 
-    // Restart current level (useful for GameOver scene)
+    // restart current level 
     public void RetryLevel()
     {
         string currentScene = PlayerPrefs.GetString("LastLevel", "Level1");
@@ -23,7 +23,7 @@ public class MenuManager : MonoBehaviour
         SceneManager.LoadScene("Level1");
     }
 
-    // Load How to play 
+    // load How to play 
     public void HowToPlay()
     {
         SceneManager.LoadScene("How");
